@@ -1,4 +1,5 @@
-import DonateButton from "../components/donate-button"
+import { DonateButton } from "../components/cta-buttons"
+import Slides from "../components/slides"
 import "../css/home.css"
 
 export default function Home() {
@@ -16,7 +17,11 @@ export default function Home() {
                 <DonateButton />
             </article>
 
-            <iframe className="youtube-video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/O1iXh-A21Wo?si=KEZQL13WpjEnMlCp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <figure>
+                <iframe className="youtube-video" src="https://www.youtube-nocookie.com/embed/O1iXh-A21Wo?si=KEZQL13WpjEnMlCp" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share allowfullscreen"></iframe>
+            </figure>
+
+            <Slides />
         </main>
     )
 }

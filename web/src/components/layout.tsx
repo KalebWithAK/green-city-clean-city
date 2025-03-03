@@ -1,5 +1,5 @@
 import { ReactNode } from "react"
-import DonateButton from "./donate-button"
+import { DonateButton } from "./cta-buttons"
 import Profile from "./profile"
 
 type Props = { children: ReactNode }
